@@ -1,1 +1,26 @@
 @import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+
+:root {
+  --scampi: #666ca3;
+  --bunting: #13183f;
+  --waterloo: #83869a;
+  --hot-pink: #f74780;
+  --carnation: #ffa7c3;
+  --white: #ffffff;
+  --persian-rose-to-persimmon: linear-gradient(#f02aa6, #ff6f48);
+  --dodger-blue-to-persian-rose: linear-gradient(#4851ff, #f02aa6);
+  --heading-xl: normal normal 800 56px/70px "Plus Jakarta Sans", sans-serif;
+  --heading-l: normal normal 800 40px/51px "Plus Jakarta Sans", sans-serif;
+  --heading-m: normal normal 800 32px/40px "Plus Jakarta Sans", sans-serif;
+  --heading-s: normal normal 800 24px/28px "Plus Jakarta Sans", sans-serif;
+  --body-m: normal normal 500 18px/28px "Plus Jakarta Sans", sans-serif;
+  --body-s: normal normal 700 16px/28px "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
+}
