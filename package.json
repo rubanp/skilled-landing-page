@@ -24,6 +24,7 @@
   },
   "type": "module",
   "dependencies": {
+    "countup.js": "^2.1.0",
     "lit": "^2.2.3"
   }
 }

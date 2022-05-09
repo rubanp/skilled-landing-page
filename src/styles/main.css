@@ -16,11 +16,23 @@
   --heading-s: normal normal 800 24px/28px "Plus Jakarta Sans", sans-serif;
   --body-m: normal normal 500 18px/28px "Plus Jakarta Sans", sans-serif;
   --body-s: normal normal 700 16px/28px "Plus Jakarta Sans", sans-serif;
+  --tablet: 768px;
+  --mobile: 375px;
 }
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightgrey;
+  background: var(--persian-rose-to-persimmon);
+}
+
+o-counter[caption="Course hours"] {
+  width: 200px;
+}
+
+@media only screen and (max-width: 770px) {
+  o-counter[caption="Course hours"] {
+    width: 155px;
+  }
 }
