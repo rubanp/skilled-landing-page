@@ -14,7 +14,7 @@ export default class OCounter extends LitElement {
 
   @property() unit: string = '';
 
-  @state() counterDelay: number = 500;
+  @state() counterDelay: number = 100;
 
   @query('#value') valueElem!: HTMLSpanElement;
 
@@ -39,6 +39,7 @@ export default class OCounter extends LitElement {
       }
       h2 {
         font: var(--heading-l);
+        color: black;
       }
       @media only screen and (max-width: 770px) {
         :host {
@@ -52,20 +53,34 @@ export default class OCounter extends LitElement {
           font-size: 14px;
         }
       }
+      @keyframes fadeInRight {
+        from {
+          opacity: 0;
+          transform: translate3d(50%, 0, 0);
+        }
+
+        to {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      :host {
+        animation: fadeInRight 1s ease-out forwards;
+      }
       `,
   ];
 
   render() {
     return html`
       <p>${this.caption}</p>
-      <h2><span id="value">${this.value}</span>${this.unit}</h2>
+      <h2><span id="value">0</span>${this.unit}</h2>
     `;
   }
 
   firstUpdated() {
     setTimeout(() => {
       const countup = new CountUp(this.valueElem, this.value, {
-        startVal: this.value > 1000 ? 700 : 10,
+        startVal: this.value > 1000 ? 1000 : 10,
         duration: this.value > 1000 ? 3 : 4.5,
       });
       if (!countup.error) {
