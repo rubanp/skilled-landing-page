@@ -1,4 +1,1 @@
-import OCounter from '../components/o-counter';
-
-customElements.define('o-counter', OCounter);
-export {};
+import '../components/o-counter';

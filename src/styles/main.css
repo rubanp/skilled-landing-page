@@ -26,13 +26,3 @@ body {
   align-items: center;
   background: var(--persian-rose-to-persimmon);
 }
-
-o-counter[caption="Course hours"] {
-  width: 200px;
-}
-
-@media only screen and (max-width: 770px) {
-  o-counter[caption="Course hours"] {
-    width: 155px;
-  }
-}

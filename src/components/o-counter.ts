@@ -2,11 +2,12 @@ import {
   LitElement, html, css, PropertyValueMap,
 } from 'lit';
 import {
-  property, state, query,
+  property, state, query, customElement,
 } from 'lit/decorators.js';
 import { CountUp } from 'countup.js';
 import reset from './reset';
 
+@customElement('o-counter')
 export default class OCounter extends LitElement {
   @property() caption: string = '';
 
@@ -23,7 +24,6 @@ export default class OCounter extends LitElement {
       :host {
         background-color: var(--white);
         height: 120px;
-        width: 155px;
         padding: 1.00em 1.25em;
         display: flex;
         flex-direction: column;
@@ -32,6 +32,13 @@ export default class OCounter extends LitElement {
         box-shadow: 0px 34px 54px 0px rgba(6, 22, 141, 0.16);
         border-radius: 15px;
         margin: 2em;
+        animation: fadeInRight 1s ease-out forwards;
+      }
+      :host(.large) {
+        width: 200px;
+      }
+      :host(.small) {
+        width: 155px;
       }
       p {
         font: var(--body-m);
@@ -43,8 +50,13 @@ export default class OCounter extends LitElement {
       }
       @media only screen and (max-width: 770px) {
         :host {
+          height: 100px
+        }
+        :host(.large) {
+          width: 155px;
+        }
+        :host(.small) {
           width: 105px;
-          height: 100px;
         }
         h2 {
           font: var(--heading-m);
@@ -63,9 +75,6 @@ export default class OCounter extends LitElement {
           opacity: 1;
           transform: translate3d(0, 0, 0);
         }
-      }
-      :host {
-        animation: fadeInRight 1s ease-out forwards;
       }
       `,
   ];
