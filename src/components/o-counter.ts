@@ -1,5 +1,5 @@
 import {
-  LitElement, html, css, PropertyValueMap,
+  LitElement, html, css,
 } from 'lit';
 import {
   property, state, query, customElement,
@@ -76,7 +76,7 @@ export default class OCounter extends LitElement {
           transform: translate3d(0, 0, 0);
         }
       }
-      `,
+    `,
   ];
 
   render() {
