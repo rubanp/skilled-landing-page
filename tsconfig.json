@@ -1,5 +1,5 @@
 {
-  "include": ["src/*", "./src/**/*"],
+  "include": ["./src/*", "./src/**/*", "./src/*.json"],
   "compilerOptions": {
     "target": "ESNext",
     "useDefineForClassFields": false,
@@ -23,9 +23,11 @@
     "noImplicitOverride": false,
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
+    "strictBindCallApply": true,
     "newLine": "lf",
     "pretty": true,
     "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
     "plugins": [
       {
         "name": "ts-lit-plugin"

@@ -1,7 +1,7 @@
 import type { StorybookConfig } from '@storybook/core-common';
 
 const config: StorybookConfig = {
-  stories: ["../src/stories"],
+  stories: ['../src/**/*.stories.@(js|mdx)'],
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
@@ -13,7 +13,7 @@ const config: StorybookConfig = {
   framework: "@storybook/web-components",
   core: {
     builder: "@storybook/builder-vite",
-  }
+  },
 };
 
 export default config;

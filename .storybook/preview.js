@@ -1,6 +1,10 @@
 import '../src/styles/main.css';
 import '../src/styles/reset.css';
 import { themes } from '@storybook/theming';
+import { setCustomElementsManifest } from '@storybook/web-components';
+import customElements from '../src/custom-elements.json';
+
+setCustomElementsManifest(customElements);
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

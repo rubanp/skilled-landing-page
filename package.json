@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "custom-elements-manifest analyze --litelement --globs './src/components/*.ts' --outdir src && vite",
     "build": "vite build --emptyOutDir && cp -r ./src/static ./dist",
     "lint:css": "stylelint --config ./.stylelintrc.css.json ./src/styles/*.css",
     "deploy": "rm -rf dist && npm run build && cd dist && git init && git add . && git commit -m 'deploy' && git remote add origin https://github.com/rubanp/skilled-landing-page && git push --force origin main:gh-pages",
@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.10",
+    "@custom-elements-manifest/analyzer": "^0.5.7",
     "@open-wc/storybook": "^0.2.8",
     "@storybook/addon-a11y": "^6.4.22",
     "@storybook/addon-actions": "^6.4.22",
@@ -49,5 +50,6 @@
   "dependencies": {
     "countup.js": "^2.1.0",
     "lit": "^2.2.3"
-  }
+  },
+  "customElements": "src/custom-elements.json"
 }
