@@ -37,8 +37,8 @@ export const parameters = {
       cellSize: 10,
       opacity: 0.5,
       cellAmount: 10,
-      offsetX: 16,
-      offsetY: 16,
+      offsetX: 0,
+      offsetY: 0,
     }
   },
 }
