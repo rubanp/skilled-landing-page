@@ -31,7 +31,6 @@ export default class OCounter extends LitElement {
         align-items: left;
         box-shadow: 0px 34px 54px 0px rgba(6, 22, 141, 0.16);
         border-radius: 15px;
-        margin: 2em;
         animation: fadeInRight 1s ease-out forwards;
       }
       :host(.large) {

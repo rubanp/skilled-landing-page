@@ -19,10 +19,3 @@
   --tablet: 768px;
   --mobile: 375px;
 }
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--persian-rose-to-persimmon);
-}
