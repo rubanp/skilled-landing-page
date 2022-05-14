@@ -4,6 +4,79 @@
   "modules": [
     {
       "kind": "javascript-module",
+      "path": "src/components/o-button.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "OButton",
+          "members": [
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "value"
+            },
+            {
+              "kind": "field",
+              "name": "type",
+              "type": {
+                "text": "'one' | 'two' | 'three'"
+              },
+              "default": "'one'",
+              "attribute": "type"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "value"
+            },
+            {
+              "name": "type",
+              "type": {
+                "text": "'one' | 'two' | 'three'"
+              },
+              "default": "'one'",
+              "fieldName": "type"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "o-button",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "OButton",
+            "module": "src/components/o-button.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "o-button",
+          "declaration": {
+            "name": "OButton",
+            "module": "src/components/o-button.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/components/o-counter.ts",
       "declarations": [
         {
