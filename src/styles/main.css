@@ -9,7 +9,9 @@
   --carnation: #ffa7c3;
   --white: #ffffff;
   --persian-rose-to-persimmon: linear-gradient(#f02aa6, #ff6f48);
+  --persimmon-to-carnation: linear-gradient(#ff6f48, #ffa7c3);
   --dodger-blue-to-persian-rose: linear-gradient(#4851ff, #f02aa6);
+  --persian-rose-to-scampi: linear-gradient(#f02aa6, #666ca3);
   --heading-xl: normal normal 800 56px/70px "Plus Jakarta Sans", sans-serif;
   --heading-l: normal normal 800 40px/51px "Plus Jakarta Sans", sans-serif;
   --heading-m: normal normal 800 32px/40px "Plus Jakarta Sans", sans-serif;
